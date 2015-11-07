@@ -146,3 +146,9 @@ input[type=url]:focus {
   clear: both;
 }
 
+.logout {
+  float: right;
+  padding-right: 35px;
+  padding-top: 12px;
+}
+
