@@ -7,11 +7,19 @@ angular.module('shortly.services', [])
       method: 'GET',
       url: '/api/links',
     })
-    
+  }
+
+  var addLinks = function(linkName) {
+    return $http({
+      method: 'POST',
+      url: '/api/links',
+      data: linkName
+    })
   }
 
   return {
-    getLinks: getLinks
+    getLinks: getLinks,
+    addLinks: addLinks
   }
 
 })
